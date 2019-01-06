@@ -1,0 +1,8 @@
+site_name: Bounded Infinity mkdocs
+theme: readthedocs
+site_url: https://github.com/boundedinfinity/userdotd
+markdown_extensions:
+    -   admonition
+pages:
+    -   Home: index.md
+    -   Contrib: contrib.md

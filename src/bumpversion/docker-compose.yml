@@ -1,0 +1,5 @@
+version: '3'
+services:
+    bumpversion:
+        build: .
+        image: boundedinfinity/bumpversion:1.0.1

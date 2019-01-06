@@ -1,0 +1,14 @@
+version: '3'
+services:
+    mkdocs:
+        image: boundedinfinity/mkdocs:1.0.3
+        volumes:
+            - .:/src
+        ports:
+            - 8000:8000
+    bumpversion:
+        image: boundedinfinity/bumpversion:1.0.1
+        volumes:
+            - .:/src
+            - ${HOME}/.gitconfig:/root/.gitconfig
+            - $HOME/.ssh:/root/.ssh:ro
